@@ -30,7 +30,7 @@ Some of the features this package contains are as follows:
 Questrade REST APIs require an access token to be obtained from their servers first before making any subequent API requests.  This package automatically handles that for you whenever one of the Python wrapped Questrade APIs is called.  The initial access token can only be retrieved through the OAuth2 handshake.  Therefore, if your machine has not yet retrieved an access token, it will launch a web browser directed at the Questrade login page where you will have to enter your Questrade Id and password.  You'll then be prompted to accept the Authorization Request to receive your initial access token from Questrade.  Once the access token is retrieved, the intended Questrade API call will then occur.  Subsequest API calls will then automatically refresh the access token whenever needed to avoid having to re-enter a Questrade Id and password.
 
 You can also obtain your initial access token manually by following these steps:
- 1. Point your web browser to [https://n0mq97v6uj.execute-api.us-east-1.amazonaws.com/dev/authorize](https://n0mq97v6uj.execute-api.us-east-1.amazonaws.com/dev/authorize)
+ 1. Point your web browser to ~~[https://n0mq97v6uj.execute-api.us-east-1.amazonaws.com/dev/authorize~](https://n0mq97v6uj.execute-api.us-east-1.amazonaws.com/dev/authorize)~~ See [Issue #1](https://github.com/pcinat/QuestradeAPI_PythonWrapper/issues/1)
  2. Login with your Questrade credentials
  3. Accept the Authorization Request to receive an access token from Questrade.
 
@@ -59,7 +59,7 @@ Eclipse [PyDev] was used as the primary IDE.
 
 [virtualenv] was also integrated with this project in PyDev.  Once you have Python 2.7 installed and your virtualenv activated, enter the following command to download and install all the required Python dependencies that are needed.
 
-`pip install requirements.txt`
+`pip install -r requirements.txt`
 
 
 ### Technologies
